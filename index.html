@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Team Info</title>
+</head>
+
+<body>
+    <h1>Select a Football Team</h1>
+    <form id="footballForm"
+        onsubmit="event.preventDefault(); let select = document.getElementById('teamSelect'); let selectedCode = select.value; showTeamInfo(selectedCode); return false;">
+        <select id="teamSelect">
+        </select>
+        <input type="submit" value="Show Team Info">
+    </form>
+    <p id="teamInfo"></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
